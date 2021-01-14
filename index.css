@@ -11,17 +11,41 @@ body {
 
 /* region header */
 .region-header {
-  background-color: #e3e3e3;
-  padding: 30px;
+  padding: 20px;
+  color: #ffffff;
+  background: linear-gradient(56deg, #225476, #ec1010);
+  background-size: 400% 400%;
+
+  -webkit-animation: headerBgAnimation 30s ease infinite;
+  -moz-animation: headerBgAnimation 30s ease infinite;
+  animation: headerBgAnimation 30s ease infinite;
 }
 
-.simple-logo__img {
-  height: auto;
-  max-width: 165px;
-  width: 100%;
+@-webkit-keyframes headerBgAnimation {
+  0%{background-position:0% 83%}
+  50%{background-position:100% 18%}
+  100%{background-position:0% 83%}
+}
+@-moz-keyframes headerBgAnimation {
+  0%{background-position:0% 83%}
+  50%{background-position:100% 18%}
+  100%{background-position:0% 83%}
+}
+@keyframes headerBgAnimation {
+  0%{background-position:0% 83%}
+  50%{background-position:100% 18%}
+  100%{background-position:0% 83%}
+}
+
+.simple-logo {
+  align-items: center;
+  display: inline-flex;
 }
 
 .simple-logo__text {
+  font-size: 30px;
+  line-height: 1;
+  margin-left: 20px;
   text-transform: uppercase;
 }
 
@@ -30,10 +54,19 @@ body {
   padding: 50px 0;
 }
 
-.simple-headline {
+.h1 {
   font-size: 30px;
   line-height: 36px;
   margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.h2 {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.h3 {
 }
 
 .simple-paragraph {
@@ -42,7 +75,6 @@ body {
 }
 
 /* region footer */
-
 .region-footer {
   background-color: #e3e3e3;
   padding: 30px;
